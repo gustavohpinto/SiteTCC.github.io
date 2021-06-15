@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login/css/reset.css">
+    <link rel="stylesheet" href="login/css/style.css">
+    <!--Fonts  -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img  id="logo" src="img/logo.png">
+        <h1>Cadastro</h1>
+        <form action="processa_cad.php" method="POST"> <!--processa.php-->
+            <input type="text"  name="nome" placeholder="Nome"/>  <!-- required  -->
+            <input type="email"  name="email" placeholder="Email"/>  <!-- required  -->
+            <input type="password" name="pass" placeholder="Senha" /> <!-- required -->
+                <br>
+            <button type="submit"> Cadastrar </button>
+                <br>
+            
+    </form>
+       
+        <a class="noLogin" href="login/login.html">Já possui login? Entrar</a>
+    </div>
+</body>
+</html>

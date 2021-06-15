@@ -1,0 +1,100 @@
+body{
+    background:#524666 ;
+
+}
+
+#logo{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+h1{
+    margin: 20px 0;
+    align-self: center;
+    margin-left: 20px;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    font-family: 'Roboto','Quicksand',sans-serif;
+    color: #ffffff;
+
+}
+
+
+
+input, button{
+    height: 60px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    border-radius: 5px;
+    width: 100%;
+  
+
+}
+
+input{
+     background: #dddada; /*2e2e2e*/
+     border: 0;
+     margin-bottom: 2px;
+}
+
+button{
+    background: #FB8E25; /*Cor do BEE do Beesiness*/
+    border: 1px solid #4d4d4d;
+    color: #ffffff;
+    margin: 20px 0;
+    align-self: center;
+    margin-left: 20px;
+
+}
+
+
+a{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    color: #ffffff;
+    text-decoration: none;
+    justify-self: center;
+    margin-left: 20px;
+}
+
+/* Sessão de Esqueci Login ou Cadastrar-se */
+.forgotLogin{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.noLogin{
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 992px) {
+    button, input{
+        margin-left: 0;
+    }
+
+    a{
+        margin-left: 0;
+    }
+
+    .forgotLogin{
+        margin-left: 0;
+    }
+    
+    .noLogin{
+       
+        margin-left: 0;
+    }
+}
