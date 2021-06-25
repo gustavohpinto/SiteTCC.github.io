@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php 
+
+ob_start();
+?>
 <html lang="pt-br">
 
 <head>
@@ -25,7 +30,21 @@
 <body>
     <!-- Navbar -->
     <?php 
-    include 'verificador.php';
+    session_start();
+	
+
+	if (
+		(!isset($_SESSION['id'])==true)&&
+		(!isset($_SESSION['nome'])==true)&&
+		(!isset($_SESSION['email'])==true)) {
+		
+		unset($_SESSION['id']);
+		unset($_SESSION['nome']);
+		unset($_SESSION['email']);
+
+		header('location:index.html');
+        ob_end_flush();
+	}
     ?>
     <nav class="navbar navbar fixed-top navbar-expand-lg navbar navbar-dark bg-purple text-dark">
         <a class="navbar-brand" href="#"> <img id="logo" src="./img/logo.png"></a>
@@ -38,7 +57,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link cor-home beesiness" href="#">Beesiness<span class="sr-only"></span></a>
+                    <a class="nav-link cor-home beesiness" href="logout.php">Beesiness<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

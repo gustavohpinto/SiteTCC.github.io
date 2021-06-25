@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link cor-home beesiness" href="#">Beesiness<span class="sr-only"></span></a>
+                    <a class="nav-link cor-home beesiness" href="logout.php">Beesiness<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

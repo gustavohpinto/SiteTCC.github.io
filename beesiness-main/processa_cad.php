@@ -1,9 +1,6 @@
 <?php
-//Processa
-
-//SESSION PSEUDOVARIAVEL(CRUD)
-session_start();  //Campos para validação - > Chaves Primarias, Emails, Id,
-
+session_start();
+ob_start();
 include 'restrita/conecta.php';
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -17,6 +14,7 @@ $consulta = $conexao -> prepare(
         $consulta -> execute();
         
         header('Location: login.html');
+        ob_end_flush();
     
     } catch (\Throwable $th) {
         Echo"Erro";

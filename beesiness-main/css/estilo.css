@@ -7,11 +7,20 @@ body{
     overflow: inherit;
 }
 
+#imgesq{
+	float: left;
+  margin-top: 10px;
+	}
+
+#imgdir{
+	float: right;
+  margin-right: 110px;
+}
 
 /* Logo no NAvbar */
 #logo{
-   height:80px;
-   width: 80px;
+   height:15%;
+   width: 15%;
    border-radius: 12%;
 }
 
@@ -103,12 +112,13 @@ a.cor-home{
 .lateral{
 }
 
+
 /* FIM */ 
 
 
 
 
-@media screen and (min-width: 575px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .espacoLogin{
         margin-left: 0px;
       }
@@ -124,8 +134,16 @@ a.cor-home{
 
 
 /* H1 das Sections */
- h1{
-    padding-top: 50px;
+h1{
+  padding-top: 10px;
+} 
+.esp{
+  font-size: 2.0rem;
+  font-weight: 300;
+} 
+.esp1{
+  font-size: 2.4rem;
+  font-weight: 300;
 } 
 /* Espaço entre texto e carrosel */
 .HomeHist{
@@ -165,14 +183,19 @@ h2{
     border-radius: 0.25rem;
   }
 
+/* teste */
+.neon{
+  text-shadow: 0 0 5px #FFF;
+}
+#nav-section{
+  font-size: 1.5rem;
+}
 
-  /* Espaço entre Foorter e Forms */
-  #contato{
-      padding-bottom: 50px;
-  }
+.nav-link {
+  align-self: flex-start;
+  display: flex;
+}
 
-
-
-
-
-
+.direita{
+  align-self: flex-end;
+}

@@ -1,9 +1,9 @@
 
 <?php
     $host ="localhost";
-    $usuario ="root";
-    $senha ="";
-    $banco="tcc";
+    $usuario ="id16934039_beesiness";
+    $senha ="{<\JaGy<V9<uAJhg";
+    $banco="id16934039_bancodedados";
 
     $conexao = new MySQLi("$host","$usuario","$senha","$banco");
 
